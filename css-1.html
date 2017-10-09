@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>CSS初探</title>
+	<link rel="stylesheet" type="text/css" href="css/1.css">
+	<style type="text/css">
+		/*创建嵌入样式表*/
+		img {
+			border: 5px solid green;
+		}
+	</style>
+</head>
+<body>
+<header>
+	<h1>CSS样式</h1>
+	<p>定义选择器</p>
+	<ul>
+		<li><p>上下文选择器:li p,选择li标签里面的的p标签</p></li>
+		<li><p class="frame" title="属性选择器">类选择器,选择frame类</p></li>
+		<li><p id="selector" class="frame" title="指定属性值选择器">id选择器，选择特定id</p></li>
+		<li>
+			<span>指定标签的类选择器,选择img标签里面的border类</span><br>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ptkO7vx9EJuwH5s77RG-3iJgr5m5S_uuI1BvCe_7ZEM2qMeheA" class="border">
+			<p>普通同胞元素选择器</p>
+		</li>
+		<li><a href="https://www.baidu.com">伪类选择器</a></li>
+		<li><p class="frame border">多类名选择器</p> </li>
+		<li><em><p>选择所有子元素是p的标签</p> </em> </li>
+		<li><label>相邻同胞元素选择器<input type="text" placeholder="color:red" /></label></li>
+	</ul>
+	
+</header>
+<main>
+	<article>
+		<h2>红色边框</h2>
+		<figure>
+			<figcaption>图片</figcaption>
+			<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_ptkO7vx9EJuwH5s77RG-3iJgr5m5S_uuI1BvCe_7ZEM2qMeheA" class="frame" />
+			<img src="http://img02.tooopen.com/images/20160606/tooopen_sy_164390979313.jpg" style="width:100px;height:200px"/>
+		</figure>
+		<p>设置相对于父元素的字体大小需要一点 时间去习惯。你需要理解浏览器处理这些相 对于父元素的单位的方式，下面花一点时间 解释一下。
+不过首先要说明，使用这种方法时，最 好在 body 元素上建立一个基准，即声明 body {font-size:100%; }(参见图10.6.4)。大 多数时候，这项设置等价于将字体大小设为 16px，即大多数系统的默认字体大小。照例， 该属性值传递至其他的元素(记住，font- size 是继承性属性)，除非其他元素通过浏 览器默认设置了自己的 font-size，或者在样 式表指定了自己的 font-size</p>
+	</article>
+</main>
+<aside>
+	
+</aside>
+<footer>
+	
+</footer>
+</body>
+</html>

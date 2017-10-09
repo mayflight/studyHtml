@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<title>文本</title>
+</head>
+<body>
+<header>
+<nav>
+	<a href="#p2" title="段落">段落链接</a>
+</nav>
+</header>
+<main>
+	<article>
+		<h1>一级标题</h1>
+		<p>毫无疑问，p 是最常使用的 HTML 元素 之一(注意:在实践中，我通常会使用 article 包 住这些内容。这里省略了该标记，是为了让例子 显得更为通用，同时避免产生 p 元素必须嵌套在 article 中的印象)<strong>strong标签可以用来表示重要的文本内容</strong><em>em标签则表示我们一直强调的内容</em></p>
+		<h2>二级标题</h2>
+		<figure>
+			<figcaption><b>figure</b>标签用来表示图表<b>figcaption</b>标签用来表示图表标题</figcaption>
+			<img src="https://img6.bdstatic.com/img/image/public/bizhi112.png">
+		</figure>
+		<p id="p2">这是段落通常默认的呈现方式。默认情 况下，浏览器会在标题和段落之间，<q>引用文本,q标签引用的是行内元素</q> 以及不同的段 落之间添加垂直间距。<cite>这是一段引用</cite> <blockquote>引用文本,blockquote标签引用的是块级元素。</blockquote> 使用 CSS 可以控制所有内 容元素的格式<b>b标签只是单纯着加粗体，没有任何语义</b><i>i元素只是单纯着添加斜体，也没有任何语义</i></p>
+		<p>当前时间<time>9-28 14:13</time> <abbr title="apple">abbr标签标示缩写词AP (Apple apple)</abbr> </p>
+		<p>定义术语<dfn>勾</dfn>意味着好奇</p>
+		<p>上标<sup>1</sup>,上标<sup>2</sup>,下标<sub>1</sub>,下标<sub>2</sub></p>
+		<del>已删除</del>
+		<del><p>删除整段</p></del>
+		<ins>新增</ins>
+		<s>不再相关的内容</s>
+		<address> <a href="18868824465">Call me</a> </address>
+		<code>code标签表示代码块 int a = 1,b=2</code>
+		<samp>samp标签表示系统输出</samp>
+		<var>var标签表示占位符</var>
+		<pre>
+			一段Swift代码
+			<code>
+				["1","2","3"].map = {
+					print($1)
+				}
+			</code>
+		</pre>
+		<mark id="mark">使用mark表示突出显示的内容</mark>
+		<p><strong>使用bar换行:</strong><br> 第一行<br>第二行<br> </p>
+		<span>span用于行内元素</span>
+		<span>span没有语义</span>
+		<u>u标签用来表示非文本注解</u>
+		<p>bdi<bdi dir="rtl">知未向方示表</bdi></p>
+		<p>bdo<bdo dir="rtl" title="左到右从示表">左到右从示表</bdo></p>
+		<meter value="0.8">meter0.8</meter>
+		<progress value="2" max="10">progress 2 </progress>
+	</article>
+</main>
+<aside>
+	<section>附录内容</section>
+</aside>
+<footer>
+	<small>@资料来源互联网</small>
+</footer>
+</body>
+</html>

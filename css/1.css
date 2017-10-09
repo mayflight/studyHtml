@@ -1,0 +1,140 @@
+/*元素选择器*/
+img {
+	border: 4px solid gray;
+}
+h1 {
+	color: red;
+	letter-spacing: 4px; /*字间距,wold-spcing对汉字无效*/
+}
+h2 {
+	background-color: #eaebef;
+}
+p {
+	font-size: 20px;
+	text-indent: 1.2em; /*添加缩进*/
+}
+article {
+	font-size: 100%;
+	background: rgb(255,202,198) fixed url(https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2454555583,3840511999&fm=27&gp=0.jpg);
+}
+/*设置背景*/
+body {
+	background-color: #88b2d2;
+	background-image: url(../resource/b.png);
+	background-attachment: fixed;
+}
+html {
+	font-size: 100%;
+}
+p:hover {
+	color:orange;
+}
+/*上下文选择器*/
+/*选择父元素是li元素的p元素*/
+li > p {
+	color: green;
+}
+
+/*选择父、祖元素是Li元素的p元素*/
+li p {
+	border-left: double;
+}
+
+/*类选择器*/
+.frame {
+	border-style: dashed;
+	width: 200px;
+}
+
+/*多类名选择器*/
+.frame.border {
+	width: 250px;
+	height: 30px;
+	border-width: 1
+}
+
+/*指定元素中类选择器*/
+img.border {
+	border-width: 2;
+	border-style: dotted;
+}
+
+
+/*id选择器*/
+#selector {
+	background: brown;
+}
+
+/*属性选择器*/
+p[title] {
+	font-family: fantasy;
+}
+
+p[title="指定属性值选择器"] {
+	text-shadow: 5px 5px 3px yellow;
+}
+
+/*伪类选择器*/
+a:link {
+	color: red;
+}
+a:visited {
+	color: orange;
+}
+a:focus {
+	color: purple;
+}
+a:hover {
+	color:green;
+}
+a:active {
+	color: blue;
+}
+
+label input {
+	color: red;
+}
+/*em 代表了父元素的字体大小；rem代表了根元素html的字体大小*/
+/*article p {
+	font-size: 1.2em;
+	font-weight: bolder;
+	font-family: Arial;
+	font-style: italic;
+}*/
+/*相邻同胞元素选择器*/
+figure + p {
+	font-size: 1.2rem;
+	font-weight: bolder;
+	font-family: Arial;
+	font-style: italic;
+	line-height: 1.5;
+	color: rgb(255,223,109);
+}
+
+/*普通同胞元素选择器*/
+span ~ p {
+	color: purple;
+	font-size: 26px;
+}
+
+/*选择第一个元素,选择作为某元素的子元素的第一个li元素*/
+li:first-child {
+	border:4px solid purple;
+}
+/*选择最后一个元素，选择作为某元素的子元素的最后一个li元素*/
+li:last-child {
+	border-width: 5px;
+	border-color: purple;
+	border-style: dotted;
+}
+
+/*选择元素的第一个字母,label好像不支持*/
+p::first-letter {
+	color: red;
+	font-size: 25px;
+}
+/*选择元素的第一行文本,span好像不支持*/
+span::first-line {
+	display: block;
+	color:red;
+}

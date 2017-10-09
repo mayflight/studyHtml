@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="utf-8" />
+	<title>html的titile标签说明</title>
+</head>
+<body>
+<header role='banner'>这是页眉
+<nav role="navigation">
+	<ul>
+		<li><a href="#first" title="指向1">First</a></li>
+		<li><a href="#second" title="指向2">Second</a></li>
+	</ul>
+</nav>
+</header>
+<main role="main">
+	<!-- 一个注释，认识标签 -->
+	<h1 title="一级标题">title标签很重要</h1>
+	<p>对任何页面来说，分级标题都可以说是 最重要的 HTML 元素。由于标题通常传达的 是页面的主题，因此，对搜索引擎而言，如 果标题与搜索词匹配，这些标题就会被赋予 很高的权重，尤其是等级最高的 h1(这并不 是说页面中的 h1 越多越好</p>
+	<h2>它能提高搜索引擎的识别率</h2>
+	<div id = "first">这是第一重要</div>
+	<article id="second">
+		<h2>nav导航标签</h2>
+		<p>导航标签暂时没发现什么太大用处</p>
+		<div>网站的主要导航可以放到nav中，或者是全局导航也推荐放到nav中</div>
+		<p>article标签标示文档、页面、应用或网站中的一个独立容器，原则上是可以独立分配或可再用的。</p>
+	</article>
+	<section>section元素代表文档或者应用的一个一般的区块</section>
+	<section>通常在section里面包含的是一组有相似主题的内容</section>
+	<div>div标签没有任何语义，包裹标签添加样式</div>
+</main>
+<aside role="complementary">
+	aside标签表示一部分内容与主体内容相关性不强，但是可以独立存在的内容
+</aside>
+<footer>
+	footer页脚标签，不可以嵌套月header和footer标签里面
+</footer>
+</body>
+</html>
