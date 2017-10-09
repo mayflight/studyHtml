@@ -1,0 +1,25 @@
+body {
+	font-size: 100%;
+}
+p {
+	display: block; /*设置为块级元素*/
+	text-indent: 2em;
+}
+li {
+	display: inline; /*设置为行内元素*/
+	/*display: none;*/ /* 隐藏元素*/
+	/*visibility: hidden;*/  /*不可见，有空白区域*/
+}
+span {
+	box-sizing: border-box; /*盒子尺寸，包括边框和内边距，默认不包括*/
+	margin: 1em; /*设置外边距*/
+ 	display: inline-block; /*设为行内元素但是支持宽高属性*/
+	border: solid red 2px;
+	padding: 1em;  /*设置内边距*/
+	height: min-height;
+	width: 150px;
+	/*width: min-width;*/
+	/*height: 50px;*/
+	text-indent: 2em;
+	background: rgb(255,202,122);
+}
