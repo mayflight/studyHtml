@@ -1,22 +1,72 @@
 body {
 	font-size: 100%;
+	width:max-width;
+	margin: 0 auto;
 }
 p {
 	display: block; /*设置为块级元素*/
 	text-indent: 2em;
+	margin: 1em 3em;
+	background: rgb(245,205,124); 
 }
+article p:last-child {
+	position: relative;
+}
+/*.position {
+	width: 40px;
+	position: relative; 相对布局；相对于元素正常的位置布局,会在原来的地方出现空白
+	top: 150px;
+	left: 420px;
+}*/
+
+.position {
+	width: 40px;
+	 /*绝对布局；默认是相对于body来定位的，
+	但是如果祖先元素里面有设置position: 
+	relative则相对这个祖先元素定位。
+	使用绝对定位的元素将脱离原先的文档流*/
+	position: absolute;
+	top: 150px;
+	left: 420px;
+	z-index: 9; /*在定位过的元素中进行层级排序，值越大越在上显示*/
+}
+.fotter {
+	border:solid 1px red;
+	clear: both; /*清除浮动*/
+	padding: 1px 200px;
+}
+
 li {
 	display: inline; /*设置为行内元素*/
 	/*display: none;*/ /* 隐藏元素*/
 	/*visibility: hidden;*/  /*不可见，有空白区域*/
 }
+
+article {
+	width: 500px;
+	float: left;
+	background-color: #a2d;
+	position: relative; /*为了子元素作绝对定位提供依据*/
+}
+
+aside {
+	width: 400px;
+	float: right;
+	background-color: #234;
+	padding-left: 20px;
+}
+/*清除子元素的浮动效果*/
+/*main {
+	overflow: hidden;
+}*/
 span {
-	box-sizing: border-box; /*盒子尺寸，包括边框和内边距，默认不包括*/
-	margin: 1em; /*设置外边距*/
+	/*box-sizing: border-box; /*盒子尺寸，包括边框和内边距，默认不包括*/*/
+	margin: 2em 3em; /*设置外边距*/
  	display: inline-block; /*设为行内元素但是支持宽高属性*/
-	border: solid red 2px;
+	border: dotted red ;
+	border-width: 1px 2px;
 	padding: 1em;  /*设置内边距*/
-	height: min-height;
+	/*height: min-height;*/
 	width: 150px;
 	/*width: min-width;*/
 	/*height: 50px;*/
