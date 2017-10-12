@@ -9,6 +9,16 @@ p {
 	margin: 1em 3em;
 	background: rgb(245,205,124); 
 }
+
+.fix {
+	/*固定定位,使用固定定位的元素将脱离原来的文档流*/
+	position: fixed; 
+	z-index: 11;
+	background:rgb(188,188,234);
+	left: 0px;
+	top: 1px;
+}
+
 article p:last-child {
 	position: relative;
 }
@@ -27,7 +37,7 @@ article p:last-child {
 	使用绝对定位的元素将脱离原先的文档流*/
 	position: absolute;
 	top: 150px;
-	left: 420px;
+	left: 200px;
 	z-index: 9; /*在定位过的元素中进行层级排序，值越大越在上显示*/
 }
 .fotter {
