@@ -1,0 +1,7 @@
+.autolayout-image {
+	/*最大的宽高就是父元素的宽高,并且也不会超过自己本身最大的宽高*/
+	max-width: 100%;
+}
+.width-height {
+	background: #23a4ef;	
+}
