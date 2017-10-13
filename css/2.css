@@ -12,6 +12,14 @@ p {
 a {
 	font-size: 20px;
 }
+.overflow {
+	height: 100px;
+	/*visible:这是默认值，显示全部内容，
+	hidden：隐藏超出边界的内容
+	scroll:无论需要都为元素添加滚动条
+	auto:在需要的时候为元素添加滚动条*/	
+	overflow: auto;
+}
 .fix {
 	/*固定定位,使用固定定位的元素将脱离原来的文档流*/
 	position: fixed; 
@@ -21,7 +29,11 @@ a {
 	top: 100px;
 	margin: 1px 2px;
 }
-
+.background {
+	background: rgb(123,123,212);
+	display: flex; /*采用flex布局*/
+	justify-content:space-around;
+}
 article p:last-child {
 	position: relative;
 }
@@ -49,12 +61,35 @@ article p:last-child {
 	padding: 1px 200px;
 }
 
+input[name="text"] {
+	/*效果不明显，不常用*/
+	vertical-align: top;
+	height: 10px;
+}
+
 li {
 	display: inline; /*设置为行内元素*/
 	/*display: none;*/ /* 隐藏元素*/
 	/*visibility: hidden;*/  /*不可见，有空白区域*/
 }
+a.current:link{
+	color: green;
+	font-size: 2em;
+	text-decoration: none;
+}
 
+a.current:visited{
+	color: red;
+	font-size: 4em;
+}
+a.current:hover {
+	color: purple;
+	font-size: 3em;
+}
+.current {
+	/*改变鼠标形状*/
+	cursor: crosshair;
+}
 article {
 	width: 500px;
 	float: left;
