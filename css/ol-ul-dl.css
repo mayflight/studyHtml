@@ -43,7 +43,8 @@ dt {
 	}
 	ol li {
 		display: inline-block;
-		background: url("../resource/star.png") no-repeat 0.05em 0.05em;
+		background: url("../resource/star.png") no-repeat;
+		background-size: 2em 2em;
 		line-height: 2em;
 		padding-left: 2em;
 	}
