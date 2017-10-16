@@ -1,0 +1,35 @@
+a:link {
+	color: red;
+}
+a:visited {
+	color: orange;
+}
+a:focus {
+	color: purple;
+}
+a:hover {
+	color:green;
+}
+a:active {
+	color: blue;
+}
+.ul-li {
+	margin: 0.5em 1em;
+	padding: 0.5em 0.5em;
+}
+.ulstyle {
+	list-style: none;
+}
+.decoration {
+	text-decoration: none;
+}
+
+@media only screen and (orientation:landscape) {
+	ul {
+		display: flex;
+		align-content: space-between;
+	}
+	.ul-li {
+		display: inline-block;
+	}
+}
