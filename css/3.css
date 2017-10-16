@@ -1,7 +1,68 @@
 .autolayout-image {
 	/*最大的宽高就是父元素的宽高,并且也不会超过自己本身最大的宽高*/
 	max-width: 100%;
+	/*创建圆角*/
+	border-radius: 1em;
+	/*设置透明度*/
+	opacity: 0.75;
+}
+
+img:hover {
+	opacity: 1;
+}
+.font-size {
+	font-size: 2em;
+	color: red;
 }
 .width-height {
-	background: #23a4ef;	
+	background: #23a4ef;
+	margin: 0 auto;	
+	/*线性渐变背景*/
+	background: linear-gradient(to bottom left,yellow 30%,green);
+}
+.shadow {
+	/*为元素文本设置阴影*/
+	text-shadow: 0.2em 0.1em 0.1em gray; 
+	/* insert 让阴影位于元素内部*/
+	box-shadow: inset 0.2em 0.2em 0.1em 0.1em #123
+}
+
+/* after before 在样式之前或者之后插入内容*/
+p:after {
+	background-color: gray;
+	content: "!!!!";
+	border-radius:0.1em;
+	border: solid 0.05em white;
+}
+
+/*媒体查询规定横屏样式*/
+@media only screen and (orientation:landscape) {
+	.width-height {
+		background: #a3d;
+		overflow: hidden;
+		margin: 0 auto;
+		/*径向渐变背景*/
+		background: radial-gradient(at center,yellow 20%,green);
+	}
+	.font-size {
+		font-size: 3em;
+		color: green;
+	}
+	.right {
+		float: right;
+		border-bottom-right-radius: 1em;
+		border-top-right-radius: 1em;
+		background-color: #8ed;
+		border:solid 0.1em;
+	}
+	.autolayout-image {
+		max-width: 50%;
+		float: left;
+		border-top-left-radius: 3em;
+		border-bottom-left-radius: 3em;
+	}
+	.shadow {
+		/* 为元素本身设置阴影*/
+		box-shadow: 0.2em 0.2em 0.1em 0.1em #123
+	}
 }
