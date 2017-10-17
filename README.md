@@ -7,5 +7,4 @@ css学习
 
 js学习
 
-<p>http://htmlpreview.github.com/?https://github.com/mayflight/studyHtml/blob/master/index.html</p>
-[首页](http://htmlpreview.github.com/?https://github.com/mayflight/studyHtml/blob/master/index.html)
+[http://htmlpreview.github.com/?https://github.com/mayflight/studyHtml/blob/master/index.html](首页)
