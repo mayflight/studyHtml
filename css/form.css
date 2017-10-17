@@ -1,0 +1,14 @@
+.fields {
+	background: #2ed;
+	border: solid #e15 0.1em ;
+	padding-left: 2em;
+	margin-bottom: 2em;
+	max-width: 50em;
+}
+.button {
+	background: #2c5;
+	border-radius: 0.5em;
+	border: solid green 0.1em;
+	width: 10em;
+	margin-left: 2em;
+}
