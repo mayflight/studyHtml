@@ -18,12 +18,25 @@ a:active {
 	padding: 0.5em 0.5em;
 }
 .ulstyle {
-	list-style: none;
+	list-style-type: none;
 }
 .decoration {
 	text-decoration: none;
 }
-
+.body-style {
+	font-size: 100%;
+	background:url("../resource/night.png") repeat fixed;
+}
+.color {
+	color: rgb(134,145,128);
+}
+.main-display {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: flex-start;
+}
 @media only screen and (orientation:landscape) {
 	ul {
 		display: flex;
@@ -31,5 +44,10 @@ a:active {
 	}
 	.ul-li {
 		display: inline-block;
+	}
+	.main-display {
+		flex-direction: row;
+		max-width: 80%;
+		min-width: 30%;
 	}
 }
