@@ -1,0 +1,27 @@
+.background {
+	font-size: 100%;
+}
+table {
+	/*background:rgb(112,200,100);*/
+	margin: 5em auto;
+	max-width: 80%;
+	border-collapse: collapse;
+}
+.captiion {
+	font-size: 3em;
+	background:rgb(104,233,180);
+	color: rgb(232,89,178);
+}
+
+th {
+	border:solid gray 2px;
+	font-size: 2em;
+	background:rgb(123,245,109);
+}
+
+td {
+	border:1px solid red;
+	font-size: 1.5em;
+	background:rgb(203,88,120);
+	padding: 0.5em;
+}

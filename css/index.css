@@ -47,6 +47,10 @@ p {
 a {
 	font-size: 2em;
 }
+main > div {
+	border:dotted 0.1em rgb(200,123,103);
+	margin-bottom: 0.3em;
+}
 @media only screen and (orientation:landscape) {
 	ul {
 		display: flex;
