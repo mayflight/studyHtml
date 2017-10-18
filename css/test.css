@@ -1,0 +1,14 @@
+html {
+	font-size: 100%;
+}
+.back-image {
+	width: 100%;
+	position: relative;
+	background:green;
+}
+.title {
+	position: absolute;
+	background: red;
+	margin:0 auto;
+	top: 10rem;
+}
