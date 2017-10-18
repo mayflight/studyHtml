@@ -1,0 +1,38 @@
+.center {
+	width: 80%;
+	margin: 2em auto;
+	background:red;
+	/*清楚浮动*/
+	/*overflow: hidden;*/
+}
+.first {
+	background: #568;	
+	float: left;
+	width: 25%;
+	/*margin: 0.2em 0.2em;*/
+}
+
+.second {
+	background: #178aef;	
+	float: left;
+	width: 25%;
+	/*margin: 0.2em 0.2em;*/
+}
+
+.three {
+	background: #178897;	
+	float: left;
+	width: 25%;
+	/*margin: 0.2em 0.2em;*/
+}
+.four {
+	background: #aef;	
+	float: right;
+	width: 25%;
+	/*margin: 0.2em 0.2em;*/
+}
+.background {
+	background: green;
+	/*清除上文的浮动效果，或者也可以在.center里面添加 overflow: hidden*/
+	clear:both;
+}
