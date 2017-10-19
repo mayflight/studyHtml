@@ -1,14 +1,28 @@
 html {
 	font-size: 100%;
 }
+
 .back-image {
+	/*position: relative;*/
 	width: 100%;
-	position: relative;
-	background:green;
+	overflow: scroll;
+	background: url(../resource/bj_1.png) no-repeat;
+	background-size: 100% 100%;
+	height: 24.25rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
 }
+
 .title {
-	position: absolute;
-	background: red;
-	margin:0 auto;
-	top: 10rem;
+	color: rgb(153,201,255);
+	font-size: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+.coin {
+	font-size: 2.5rem;
+	color: yellow;
+	margin-top: 0.5rem;
 }
